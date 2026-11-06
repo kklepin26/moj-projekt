@@ -22,6 +22,12 @@ int main()
     cout << "Podaj liczbe: ";
     cin >> liczba;
 
+    if (liczba <= 0)
+    {
+        cout << "Liczba musi byc dodatnia!" << endl;
+        return 0;
+    }
+
     cout << "Podana liczba: " << liczba << endl;
 
     if (czy_pierwsza(liczba))
